@@ -75,20 +75,86 @@ body{
 }
 
 
+.summary-main{
+    margin: 2rem 2rem 0 2rem;
+    font-weight: 700;
+}
+.summary-main .heading{
+    font-weight:800;
+    font-size: 1.25rem;
+    
+}
 
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+img{
+    width:1.5rem;
+    height: 100%;
+}
+.summary-main .details .cat{
+    height:4rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
 
+.summary-main .details .label{
+    padding-left: 1rem;
+}
 
+.summary-main .details .score{
+    position: absolute;
+    right:3rem;
+    color: black;
+}
+.summary-main .score .max{
+    color: hsl(165, 30%, 60%);
+}
 
+#reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0,100%,67%);
+}
 
+#memory{
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color:hsl(39, 100%, 56%);
+}
 
+#verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color:hsl(166, 100%, 37%);
+}
 
+#visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+
+.continue{
+    height:4rem;
+    width: 100%;
+    margin-right: 2rem;
+    background-color: hsl(224, 30%, 27%);
+    color:white;
+    text-align: center;
+    font-size:1.25rem;
+    font-weight:500;
+    border:none;
+    border-radius: 2rem;
+}
+
+.continue:hover{
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    cursor: pointer;
+}
 
 
 
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-
-ul{
-    list-style-type: none;
-}
