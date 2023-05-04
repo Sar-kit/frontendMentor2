@@ -78,6 +78,9 @@ body{
 .summary-main{
     margin: 2rem 2rem 0 2rem;
     font-weight: 700;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
 }
 .summary-main .heading{
     font-weight:800;
@@ -85,7 +88,7 @@ body{
     
 }
 
-ul{
+.summary-main .details{
     list-style-type: none;
     padding-left: 0;
 }
@@ -94,6 +97,7 @@ img{
     height: 100%;
 }
 .summary-main .details .cat{
+    position:relative;
     height:4rem;
     border-radius: 1rem;
     padding-left: 1rem;
@@ -108,7 +112,7 @@ img{
 
 .summary-main .details .score{
     position: absolute;
-    right:3rem;
+    right:2rem;
     color: black;
 }
 .summary-main .score .max{
@@ -158,3 +162,61 @@ img{
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+    @media (min-width: 500px) {
+        .container{
+            margin-left: 25%;
+            margin-top: 7%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            width:47rem;
+            height:33rem;
+            border-radius: 2rem;
+            box-shadow: 2rem 2rem 5rem lightblue;
+        }
+        .result-main{
+            width:55%;
+            height: 100%;
+            border-radius: 2rem;
+        }
+        .result-main .heading{
+            font-size: 1.5rem;
+        }
+        
+
+        .result-main .score{
+            aspect-ratio: 1/1;
+            margin-top: 4rem;
+            width:60%;
+            margin-top:5.5rem;
+        }
+
+        .result-main .score .actual{
+            font-size: 5rem;
+        }
+        .result-main .text .heading{
+            font-size: 2rem;
+        }
+        
+        .summary-main{
+            width:45%;
+            margin-bottom: 5rem;
+            margin-top: 5rem;
+        }
+        .summary-main .heading{
+            font-size: 1.5rem;
+        }
+        .summary-main .details{
+            margin-top: 2.25rem;
+        }
+        
+       .align-head{
+        position:absolute;
+        top:2rem;
+       }
+    }
